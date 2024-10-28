@@ -70,7 +70,7 @@ export async function createTask(state: State | { status: string; message: strin
                 status: validateFields.data.status,
                 assignee: validateFields.data.assignee,
                 project: validateFields.data.project,
-                dueDate: validateFields.data.dueDate ? new Date(validateFields.data.dueDate) : null,
+                dueDate: validateFields.data.dueDate ? new Date(validateFields.data.dueDate) : "",
             },
         });
 
@@ -137,7 +137,7 @@ export async function updateTask(state: State | { status: string; message: strin
                 status: validateFields.data.status,
                 assignee: validateFields.data.assignee,
                 project: validateFields.data.project,
-                dueDate: validateFields.data.dueDate ? new Date(validateFields.data.dueDate) : null,
+                dueDate: validateFields.data.dueDate ? new Date(validateFields.data.dueDate) : "",
             },
         });
 
