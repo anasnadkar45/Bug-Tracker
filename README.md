@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Oriserve-Frontend-Assignment
 
-## Getting Started
+# Project Overview
 
-First, run the development server:
+Bug Tracker is a web application that allows users to report, track, and manage bugs within their projects. Built with Next.js, it leverages a user-friendly interface, making issue tracking and team collaboration efficient and organized. The project is built with TypeScript, styled with Tailwind CSS, and uses Prisma ORM and PostgreSQL (via Supabase) for data management and storage.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Getting Started
+Before running the project, make sure you have **Node.js** and **npm** installed on your machine.
+
+# Installation
+
+use this .env file because i was getting some issues while deploying the project. Usually i solves the issue but this issue i have never across yet i will try to fix it.
+
+DATABASE_URL="postgresql://postgres.maefugghbvrfhndlfbdk:M8i1Th3PnXzn08R6@aws-0-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true&connection_limit=1" # Set this to the Transaction connection pooler string you copied in Step 1
+DIRECT_URL="postgresql://postgres.maefugghbvrfhndlfbdk:M8i1Th3PnXzn08R6@aws-0-ap-south-1.pooler.supabase.com:5432/postgres"  # Set this to the Session connection pooler string you copied in Step 1
+
+KINDE_CLIENT_ID=61ad6319e63140f5b47575b1d51dfd93
+KINDE_CLIENT_SECRET=I7uFXvsv5SfxKkxTTwudczNJF5OiyhRdzUcGsylZUGk5E2PLLa
+KINDE_ISSUER_URL=https://fealtyxfrontendassignment.kinde.com
+KINDE_SITE_URL=http://localhost:3000
+KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3000
+KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/api/auth/creation
+
+
+1.Clone the repository:
+
+Clone: Open your terminal or command prompt and run
+
+  ```bash
+   git clone https://github.com/anasnadkar45/oriserve-frontend-assignment.git
+   cd oriserve-frontend-assignment
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Download: Alternatively, you can download the repository as a ZIP file from GitHub and extract it to your local machine.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2.Open the Project in a Code Editor:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ Navigate to the directory where you extracted or cloned the repository.
+ Open the project folder in your preferred code editor .
 
-## Learn More
+3.Install Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+ Open a terminal or command prompt within your project directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ Run the following command to install the required dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ ```bash
+  npm install
+```
 
-## Deploy on Vercel
+4.Run the Project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ After the dependencies are installed, start the project by running
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ ```bash
+npm run dev
+```
+This will usually start the development server and open the application in your default web browser.
+
+# Features
+- User Authentication: Secure login and registration for users.
+- Bug Reporting: Create, update, assign, and track bugs.
+- Category-based Filter: View bugs by category, priority, and status.
+- Responsive Design: Works across devices with various screen sizes.
+
+
+# Technologies Used
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+- Prisma ORM
+- PostgreSQL
+- Zod
+- React Icons
+
