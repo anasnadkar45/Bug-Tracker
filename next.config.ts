@@ -15,6 +15,18 @@ const nextConfig = {
         source: '/mytasks',
         destination: '/api/fallback', // Fallback route if `/mytasks` fails to build
       },
+      {
+        source: '/dashboard',
+        destination: '/api/fallback', // Fallback route if `/dashboard` fails to build
+      },
+      {
+        source: '/tasks',
+        destination: '/api/fallback', // Fallback route if `/mytasks` fails to build
+      },
+      {
+        source: '/profile',
+        destination: '/api/fallback', // Fallback route if `/dashboard` fails to build
+      },
     ];
   },
 };
