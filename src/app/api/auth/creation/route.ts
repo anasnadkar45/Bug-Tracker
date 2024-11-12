@@ -15,7 +15,7 @@ export async function GET() {
     return NextResponse.redirect(
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000"
-        : "https://projectshub-two.vercel.app/"
+        : "https://bug-tracker-five-pi.vercel.app"
     );
   }
 
@@ -44,7 +44,7 @@ export async function GET() {
       return NextResponse.redirect(
         process.env.NODE_ENV === "development"
           ? "http://localhost:3000"
-          : "https://projectshub-two.vercel.app/"
+          : "https://bug-tracker-five-pi.vercel.app"
       );
     }
   }
@@ -53,13 +53,13 @@ export async function GET() {
     return NextResponse.redirect(
       process.env.NODE_ENV === "development"
       ?"http://localhost:3000/"
-      : "https://projectshub-two.vercel.app/"
+      : "https://bug-tracker-five-pi.vercel.app"
     );
   } else {
     return NextResponse.redirect(
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000"
-        : "https://projectshub-two.vercel.app/"
+        : "https://bug-tracker-five-pi.vercel.app"
     );
   }
 }
